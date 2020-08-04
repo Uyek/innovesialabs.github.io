@@ -12,18 +12,21 @@
 
   // Close any open menu accordions when window is resized below 768px
   $(window).resize(function () {
-    if ($(window).width() < 1024) {
+    if ($(window).width() < 768) {
       $(".sidebar .collapse").collapse("hide");
     }
 
     // Toggle the side navigation when window is resized below 480px
-    if ($(window).width() < 1024 && !$(".sidebar").hasClass("toggled")) {
+    if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
       $("body").addClass("sidebar-toggled");
       $(".sidebar").addClass("toggled");
       $(".sidebar .collapse").collapse("hide");
     }
   });
 
+  if ($(window).width() < 768) {
+    $(".sidebar").addClass("toggled");
+  }
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $("body.fixed-nav .sidebar").on("mousewheel DOMMouseScroll wheel", function (
     e
