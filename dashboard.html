@@ -41,69 +41,70 @@
      #about {
     height: 550px;
     width: 100%;
-}
+    }
       ul.timeline {
     list-style-type: none;
     position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
+    }
+    ul.timeline:before {
+        content: ' ';
+        background: #d4d9df;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }
+    ul.timeline > li {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+    ul.timeline > li:before {
+        content: ' ';
+        background: white;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #22c0e8;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
 
-    
-}
+        
+    }
 
-ul.today {
-    list-style-type: none;
-    position: relative;
-}
-ul.today:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.today > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.today > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #ffc107;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;}
+    ul.today {
+        list-style-type: none;
+        position: relative;
+    }
+    ul.today:before {
+        content: ' ';
+        background: #d4d9df;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }
+    ul.today > li {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+    ul.today > li:before {
+        content: ' ';
+        background: white;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #ffc107;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+    }
     </style>
   </head>
   <body id="page-top">
@@ -543,26 +544,28 @@ ul.today > li:before {
                 <h5 class="card-title">Overview</h5>
                 <p><strong>Background: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque accusantium, eum ex, ipsam minus illum quas quasi quibusdam est velit perspiciatis incidunt asperiores voluptatibus eligendi cum ducimus perferendis libero!</p>
                 <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card border-primary" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
-                      <div class="card-body">
-                        <h6 class="card-title text-primary">Challenge</h6>
-                        <p class="card-text">Create something usefull in any problems.</p>
-                      </div>
-                    </div>
-                  </div>
                   <div class="col-lg-4 ">
-                    <div class="card border-warning" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                    <div class="card border-danger" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
                       <div class="card-body">
-                        <h6 class="card-title text-warning">Problems</h6>
+                        <h6 class="card-title text-danger">Problems</h6>
                         <p>End user environment & knowledge of technology.</p> 
                       </div>
                     </div>
                   </div>
+                  
+                  <div class="col-lg-4">
+                    <div class="card border-danger" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                      <div class="card-body">
+                        <h6 class="card-title text-danger">Challenge</h6>
+                        <p class="card-text">Create something usefull in any problems.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
                   <div class="col-lg-4 ">
-                    <div class="card border-success" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                    <div class="card border-warning" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
                       <div class="card-body ">
-                        <h6 class="card-title text-success">Status</h6>
+                        <h6 class="card-title text-warning">Status</h6>
                         <p>On-going.</a></p> 
                       </div>
                     </div>
@@ -582,39 +585,59 @@ ul.today > li:before {
                             <ul class="timeline">
                               
                               <li class="mb-4">
-                                <div class="card border-primary shadow">
+                                <div class="card bg-success shadow" type="button" title="Passed">
                                   <div class="card-body">
-                                    <a href="#"><strong>Protyping</strong> </a>
-                                    <p href="#" class="float-right">1 March, 2020</p>
-                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                    <div class="row">
+                                      <div class="col-lg-6 "><a href="#" class="text-white"><strong>Protyping</strong> </a></div>
+                                      <div class="col-lg-6"><p href="#" class="text-white text-lg-right">1 March, 2020</p></div>
+                                    </div>
+                                    <p class="text-justify text-white">Creating prototype website</p>
                                   </div>
                                 </div>
                               </li>
                               
-                              <li class="mb-4">
-                                <div class="card border-primary shadow">
+                              <li class="mb-4 ">
+                                <div class="card border-warning shadow" type="button" title="On-going" >
                                   <div class="card-body">
-                                    <a href="#"><strong>Design Thinking</strong> </a>
-                                    <p href="#" class="float-right">2 March, 2020</p>
-                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                    <div class="row">
+                                      <div class="col-lg-6"><a href="#" class="text-warning"><strong>Design Thinking</strong> </a></div>
+                                      <div class="col-lg-6"><p href="#" class="text-lg-right">2 March, 2020</p></div>
+                                    </div>
+                                    <p class="text-justify ">Creating prototype website</p>
                                   </div>
                                 </div>
                                 
-                                <div class="card border-primary mt-sm-1 shadow">
-                                  <div class="card-body">
-                                    <a href="#"><strong>Meeting</strong> </a>
-                                    <p href="#" class="float-right">2 March, 2020</p>
-                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                <div class="card border-warning mt-1 mt-sm-1 shadow" type="button" title="On-going" >
+                                  <div class="card-body ">
+                                    <div class="row">
+                                      <div class="col-lg-6"><a href="#" class="text-warning"><strong>Meeting</strong> </a></div>
+                                      <div class="col-lg-6"><p href="#" class="text-lg-right">2 March, 2020</p></div>
+                                    </div>
+                                    <p class="text-justify ">Creating prototype website</p>
                                   </div>
                                 </div>
                               </li>
                               
                               <li class="mb-4">
-                                <div class="card border-primary shadow">
+                                <div class="card border-primary shadow" type="button" title="Upcoming">
                                   <div class="card-body">
-                                    <a href="#"><strong>Consulting</strong> </a>
-                                    <p href="#" class="float-right">3 March, 2020</p>
-                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                    <div class="row">
+                                      <div class="col-lg-6"> <a href="#"><strong>Consulting</strong> </a></div>
+                                      <div class="col-lg-6"><p href="#" class="text-lg-right">3 March, 2020</p></div>
+                                    </div>
+                                    <p class="text-justify ">Creating prototype website</p>
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li class="mb-4">
+                                <div class="card border-primary shadow" type="button" title="Upcoming">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-lg-6"> <a href="#"><strong>Launching</strong> </a></div>
+                                      <div class="col-lg-6"><p href="#" class="text-lg-right">10 March, 2020</p></div>
+                                    </div>
+                                    <p class="text-justify ">Creating prototype website</p>
                                   </div>
                                 </div>
                               </li>
@@ -638,21 +661,25 @@ ul.today > li:before {
                             <ul class="today">
                               
                               <li class="mb-4">
-                                <div class="card border-warning shadow">
+                                <div class="card bg-success shadow" type="button" title="Passed">
                                   <div class="card-body">
-                                    <a class="text-warning" href="#"><strong>Protyping</strong> </a>
-                                    <p href="#" class="float-right">09:50:33</p>
-                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                    <div class="row">
+                                      <div class="col-lg-6"> <a class="text-white" href="#"><strong>Design Thinking</strong> </a></div>
+                                      <div class="col-lg-6"> <p href="#" class="text-lg-right text-white">09:50:33</p></div>
+                                    </div>
+                                    <p class="text-justify  text-white">Creating prototype website</p>
                                   </div>
                                 </div>
                               </li>
                               
                               <li class="mb-4">
-                                <div class="card border-warning shadow">
+                                <div class="card border-warning shadow" type="button" title="Upcoming">
                                   <div class="card-body">
-                                    <a href="#" class="text-warning"><strong>Design Thinking</strong> </a>
-                                    <p href="#" class="float-right">14:21:10</p>
-                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                    <div class="row">
+                                      <div class="col-lg-6"> <a href="#" class="text-warning"><strong>Meeting</strong> </a></div>
+                                      <div class="col-lg-6"> <p href="#" class="text-lg-right">14:21:10</p></div>
+                                    </div>
+                                    <p class="text-justify ">Creating prototype website</p>
                                   </div>
                                 </div>
                               </li>
@@ -665,6 +692,22 @@ ul.today > li:before {
                 </div>
               </div>
             </div>
+            <div class="card shadow mb-5 mb-sm-5 mt-3 mt-sm-3">
+              <div class="card-body">
+                <h5 class="mb-3 mb-sm-3">Related news</h5>
+                
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a class="text-secondary" href="#">Grab Disebut Raih Dana Segar Rp 2,9 T dari Investor Agensi K-Pop BTS</a></li>
+                  <li class="list-group-item"><a class="text-secondary" href="#">Masker Canggih Buatan Jepang: Rp 600 Ribu Bisa Terjemahkan Bahasa Pemakainya</a></li>
+                  <li class="list-group-item"><a class="text-secondary" href="#">Martin Hartono Ungkap Kunci Startup Dimodali Venture Capital</a></li>
+                  <li class="list-group-item"><a class="text-secondary" href="#">Startup Ini Bikin Kacamata Pintar untuk Deteksi Virus Corona</a></li>
+                  <li class="list-group-item"><a class="text-secondary" href="#">Startup Airy Menyerah Akibat Pandemi Corona, Semua Mitra Hotel Ditutup</a></li>
+                </ul>
+
+              </div>
+            </div>
+            
+
           <!-- /.container-fluid -->
          
           </div>
