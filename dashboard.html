@@ -31,9 +31,80 @@
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet"
     />
-
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/css/nanoscroller.min.css"
+    rel="stylesheet"
+  />
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet" />
+    <style>
+     #about {
+    height: 550px;
+    width: 100%;
+}
+      ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+
+    
+}
+
+ul.today {
+    list-style-type: none;
+    position: relative;
+}
+ul.today:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.today > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.today > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #ffc107;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;}
+    </style>
   </head>
   <body id="page-top">
     <!-- Page Wrapper -->
@@ -466,11 +537,139 @@
           <!-- End of Topbar -->
 
           <!-- Begin Page Content -->
-          <div class="container-fluid"></div>
+          <div class="container-fluid">
+            <div class="card shadow ">
+              <div class="card-body">
+                <h5 class="card-title">Overview</h5>
+                <p><strong>Background: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque accusantium, eum ex, ipsam minus illum quas quasi quibusdam est velit perspiciatis incidunt asperiores voluptatibus eligendi cum ducimus perferendis libero!</p>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card border-primary" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                      <div class="card-body">
+                        <h6 class="card-title text-primary">Challenge</h6>
+                        <p class="card-text">Create something usefull in any problems.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 ">
+                    <div class="card border-warning" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                      <div class="card-body">
+                        <h6 class="card-title text-warning">Problems</h6>
+                        <p>End user environment & knowledge of technology.</p> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 ">
+                    <div class="card border-success" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                      <div class="card-body ">
+                        <h6 class="card-title text-success">Status</h6>
+                        <p>On-going.</a></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-sm-3">
+                <div class="card shadow mt-4">
+                  <div id="about" class="nano">
+                    <div class="nano-content">
+                      <div class="container-fluid">
+                        <div class="row mt-4 ">
+                          <div class="col-lg-12">
+                            <h5>Timeline</h5>
+                            <ul class="timeline">
+                              
+                              <li class="mb-4">
+                                <div class="card border-primary shadow">
+                                  <div class="card-body">
+                                    <a href="#"><strong>Protyping</strong> </a>
+                                    <p href="#" class="float-right">1 March, 2020</p>
+                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                  </div>
+                                </div>
+                              </li>
+                              
+                              <li class="mb-4">
+                                <div class="card border-primary shadow">
+                                  <div class="card-body">
+                                    <a href="#"><strong>Design Thinking</strong> </a>
+                                    <p href="#" class="float-right">2 March, 2020</p>
+                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                  </div>
+                                </div>
+                                
+                                <div class="card border-primary mt-sm-1 shadow">
+                                  <div class="card-body">
+                                    <a href="#"><strong>Meeting</strong> </a>
+                                    <p href="#" class="float-right">2 March, 2020</p>
+                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                  </div>
+                                </div>
+                              </li>
+                              
+                              <li class="mb-4">
+                                <div class="card border-primary shadow">
+                                  <div class="card-body">
+                                    <a href="#"><strong>Consulting</strong> </a>
+                                    <p href="#" class="float-right">3 March, 2020</p>
+                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                  </div>
+                                </div>
+                              </li>
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-sm-3">
+                <div class="card shadow mt-4">
+                  <div id="about" class="nano">
+                    <div class="nano-content">
+                      <div class="container-fluid">
+                        <div class="row mt-4 ">
+                          <div class="col-lg-12">
+                            <h5>Today</h5>
+                            <ul class="today">
+                              
+                              <li class="mb-4">
+                                <div class="card border-warning shadow">
+                                  <div class="card-body">
+                                    <a class="text-warning" href="#"><strong>Protyping</strong> </a>
+                                    <p href="#" class="float-right">09:50:33</p>
+                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                  </div>
+                                </div>
+                              </li>
+                              
+                              <li class="mb-4">
+                                <div class="card border-warning shadow">
+                                  <div class="card-body">
+                                    <a href="#" class="text-warning"><strong>Design Thinking</strong> </a>
+                                    <p href="#" class="float-right">14:21:10</p>
+                                    <p class="text-justify mt-2">Creating prototype website</p>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <!-- /.container-fluid -->
-        </div>
+         
+          </div>
         <!-- End of Main Content -->
-
+      </div>
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
@@ -493,11 +692,19 @@
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script>
+     $(document).ready( function() {
+    $(".nano").nanoScroller();    
+    });
+
+
+    </script>
   </body>
 </html>
