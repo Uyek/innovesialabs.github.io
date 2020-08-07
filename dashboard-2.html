@@ -19,8 +19,8 @@
       href="https://static.wixstatic.com/media/7f7364_a749b2e0745243f585d1d60fa51f9d94%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/7f7364_a749b2e0745243f585d1d60fa51f9d94%7Emv2.png"
       type="image/png"
     />
-    <title>InnoLabs - Internalboard</title>
-    
+    <title>InnoLabs - Dashboard</title>
+
     <!-- Custom fonts for this template-->
     <link
       href="vendor/fontawesome-free/css/all.min.css"
@@ -35,127 +35,149 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet" />
   </head>
-  
+
   <body>
     <div id="content-wrapper" class="d-flex flex-column">
-        <!-- Main Content -->
-        <div id="content">
-          <!-- Topbar -->
-          <nav
-            class="navbar navbar-sm navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
-          >
-          <a class="navbar-brand text-white " href="#"
-          ><strong class="text-primary">Inno</strong><strong class="text-warning">Labs</strong>
-            </a>
-        
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <nav
+          class="navbar navbar-sm navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+        >
+          <a class="navbar-brand text-white" href="#"
+            ><strong class="text-primary">Inno</strong
+            ><strong class="text-warning">Labs</strong>
+          </a>
 
-            <!-- Topbar Navbar -->
-            <ul class="navbar-nav ml-auto">
-              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
 
-              <!-- Nav Item - Alerts -->
-              <li class="nav-item dropdown no-arrow my-auto ">
-                <a
-                  class="btn btn-light btn-sm"
-                  href="#"
-                  id="alertsDropdown"
-                  role="button"
-                  style="border-radius: 40px;"
-                  data-toggle="modal" data-target="#exampleModal"
-                >
-                  <i class="fas fa-plus fa-fw text-primary text-sm"></i>
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow my-auto">
+              <a
+                class="btn btn-light btn-sm"
+                href="#"
+                id="alertsDropdown"
+                role="button"
+                style="border-radius: 40px;"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <i class="fas fa-plus fa-fw text-primary text-sm"></i>
+              </a>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="userDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span
+                  class="mr-2 d-none d-lg-inline text-gray-600 small"
+                ></span>
+                <img class="img-profile rounded-circle" src="profile.png" />
+              </a>
+              <!-- Dropdown - User Information -->
+              <div
+                class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="userDropdown"
+              >
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
                 </a>
-              </li>
-
-              <div class="topbar-divider d-none d-sm-block"></div>
-
-              <!-- Nav Item - User Information -->
-              <li class="nav-item dropdown no-arrow">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="userDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
-                    ></span
-                  >
-                  <img class="img-profile rounded-circle" src="profile.png" />
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
                 </a>
-                <!-- Dropdown - User Information -->
-                <div
-                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                  aria-labelledby="userDropdown"
-                >
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Profile
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Settings
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Activity Log
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="login.html">
-                    <i
-                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
-                    ></i>
-                    Logout
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <!-- End of Topbar -->
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">
+                  <i
+                    class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                  ></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Topbar -->
+      </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-lg-3 mb-3 mb-sm-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="img/undraw_Preparation_re_t0ce.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <hr />
+              <h6 class="card-title text-center">Project of Things</h6>
+              <a
+                class="btn btn-sm btn-block btn-outline-secondary mt-3"
+                href="#"
+                >Open</a
+              >
+            </div>
           </div>
         </div>
 
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="col-lg-3 mb-3 mb-sm-3">
-                <div class="card">
-                    <img class="card-img-top" src="img/undraw_Preparation_re_t0ce.png" alt="Card image cap">
-                    <div class="card-body">
-                        <hr>
-                      <h6 class="card-title text-center">Project of Things</h6>
-                      <a class="btn btn-sm btn-block btn-outline-secondary mt-3" href="#">Open</a>
-                    </div>
-                  </div>
+        <div class="col-lg-3">
+          <div class="card mb-3 mb-sm-3">
+            <img
+              class="card-img-top"
+              src="img/undraw_Preparation_re_t0ce.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <hr />
+              <h6 class="card-title text-center">Machine Learning</h6>
+              <a
+                class="btn btn-sm btn-block btn-outline-secondary mt-3"
+                href="#"
+                >Open</a
+              >
             </div>
-
-            <div class="col-lg-3 ">
-                <div class="card mb-3 mb-sm-3">
-                    <img class="card-img-top" src="img/undraw_Preparation_re_t0ce.png" alt="Card image cap">
-                    <div class="card-body">
-                        <hr>
-                      <h6 class="card-title text-center">Machine Learning</h6>
-                      <a class="btn btn-sm btn-block btn-outline-secondary mt-3" href="#">Open</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mb-3 mb-sm-3">
-                    <img class="card-img-top" src="img/undraw_Preparation_re_t0ce.png" alt="Card image cap">
-                    <div class="card-body">
-                        <hr>
-                      <h6 class="card-title text-center">Artificial Intelligence</h6>
-                      <a class="btn btn-sm btn-block btn-outline-secondary mt-3" href="#">Open</a>
-                    </div>
-                  </div>
-            </div>
-           
-            
+          </div>
         </div>
+        <div class="col-lg-3">
+          <div class="card mb-3 mb-sm-3">
+            <img
+              class="card-img-top"
+              src="img/undraw_Preparation_re_t0ce.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <hr />
+              <h6 class="card-title text-center">Artificial Intelligence</h6>
+              <a
+                class="btn btn-sm btn-block btn-outline-secondary mt-3"
+                href="#"
+                >Open</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

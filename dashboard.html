@@ -487,13 +487,13 @@
 
           <!-- Begin Page Content -->
           <div class="container-fluid">
-            <div class="card shadow ">
+            <div class="card shadow">
               <div class="card-body">
                 <h5 class="card-title">Overview</h5>
                 <p><strong>Background: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque accusantium, eum ex, ipsam minus illum quas quasi quibusdam est velit perspiciatis incidunt asperiores voluptatibus eligendi cum ducimus perferendis libero!</p>
                 <div class="row">
                   <div class="col-lg-4 ">
-                    <div class="card border-danger" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                    <div class="card border-danger shadow" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
                       <div class="card-body">
                         <h6 class="card-title text-danger">Problems</h6>
                         <p>End user environment & knowledge of technology.</p> 
@@ -502,7 +502,7 @@
                   </div>
                   
                   <div class="col-lg-4">
-                    <div class="card border-danger" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                    <div class="card border-danger shadow" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
                       <div class="card-body">
                         <h6 class="card-title text-danger">Challenge</h6>
                         <p class="card-text">Create something usefull in any problems.</p>
@@ -511,7 +511,7 @@
                   </div>
                   
                   <div class="col-lg-4 ">
-                    <div class="card border-warning" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
+                    <div class="card border-warning shadow" style="max-height: 9rem; height: 9rem; margin-bottom: 5px;">
                       <div class="card-body ">
                         <h6 class="card-title text-warning">Status</h6>
                         <p>On-going.</a></p> 
@@ -533,10 +533,10 @@
                             <ul class="timeline">
                               
                               <li class="mb-4">
-                                <div class="card bg-success shadow" type="button" title="Passed">
+                                <div class="card bg-success shadow" type="button" title="Passed" data-toggle="modal" data-target="#staticBackdrop">
                                   <div class="card-body">
                                     <div class="row">
-                                      <div class="col-lg-6 "><a href="#" class="text-white"><strong>Protyping</strong> </a></div>
+                                      <div class="col-lg-6 "><a href="#" class="text-white" data-toggle="modal" data-target="#staticBackdrop"><strong>Protyping</strong> </a></div>
                                       <div class="col-lg-6"><p href="#" class="text-white text-lg-right">1 March, 2020</p></div>
                                     </div>
                                     <p class="text-justify text-white">Creating prototype website</p>
@@ -545,20 +545,20 @@
                               </li>
                               
                               <li class="mb-4 ">
-                                <div class="card border-warning shadow" type="button" title="On-going" >
+                                <div class="card border-warning shadow" type="button" title="On-going" data-toggle="modal" data-target="#staticeg">
                                   <div class="card-body">
                                     <div class="row">
-                                      <div class="col-lg-6"><a href="#" class="text-warning"><strong>Design Thinking</strong> </a></div>
+                                      <div class="col-lg-6"><a href="#" class="text-warning" data-toggle="modal" data-target="#staticeg"><strong>Design Thinking</strong> </a></div>
                                       <div class="col-lg-6"><p href="#" class="text-lg-right">2 March, 2020</p></div>
                                     </div>
                                     <p class="text-justify ">Creating prototype website</p>
                                   </div>
                                 </div>
                                 
-                                <div class="card border-warning mt-1 mt-sm-1 shadow" type="button" title="On-going" >
+                                <div class="card border-warning mt-1 mt-sm-1 shadow" type="button" title="On-going" data-toggle="modal" data-target="#staticeggoing">
                                   <div class="card-body ">
                                     <div class="row">
-                                      <div class="col-lg-6"><a href="#" class="text-warning"><strong>Meeting</strong> </a></div>
+                                      <div class="col-lg-6"><a href="#" class="text-warning" data-toggle="modal" data-target="#staticeggoing"><strong>Meeting</strong> </a></div>
                                       <div class="col-lg-6"><p href="#" class="text-lg-right">2 March, 2020</p></div>
                                     </div>
                                     <p class="text-justify ">Creating prototype website</p>
@@ -661,6 +661,72 @@
           </div>
         <!-- End of Main Content -->
       </div>
+        <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h3>Title</h3>
+                  <hr>
+                  <p>Conversation : <strong>passed</strong></p>
+                  <hr>
+                  <p>Tools: <strong>passed</strong> </p>
+                  <hr>
+                  <p>Description:</p>
+                  <textarea name="" id="" cols="30" rows="4" readonly class="form-control"></textarea>
+                  <hr>
+                  <p style="margin-top: -10px;">This Activity already passed, try to checking out your gallery for the <a href="#"  >Result</a>.</p>
+                  <a href="#" data-dismiss="modal" class="btn btn-secondary float-right">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="staticeg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h3>Title</h3>
+                  <hr>
+                  <p>Conversation :  <a href="#">Zoom</a></p>
+                  <hr>
+                  <p>Tools: <a href="internalboard.html">Innolabs Board</a></p>
+                  <hr>
+                  <p>Description:</p>
+                  <textarea name="" id="" rows="4" readonly class="form-control">Hi Everyone, today we are going to do an activity called design thinking. make sure you're full so don't forget to eat first.
+                  </textarea>
+                  <hr>
+                  <p>Time : 09:50 - 12:00</p>
+                  <hr>
+                  <a href="#" data-dismiss="modal" class="btn btn-secondary float-right">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- Modal -->
+           <div class="modal fade" id="staticeggoing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h3>Title</h3>
+                  <hr>
+                  <p>Conversation :  N/A</p>
+                  <hr>
+                  <p>Tools: N/A</p>
+                  <hr>
+                  <p>Description:</p>
+                  <textarea name="" id="" rows="4" readonly class="form-control">N/A
+                  </textarea>
+                  <hr>
+                  <p>Time : N/A</p>
+                  <hr>
+                  <p style="margin-top: -10px;">This Activity not ready yet, be ready anytime soon.</p>
+                  <a href="#" data-dismiss="modal" class="btn btn-secondary float-right">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
