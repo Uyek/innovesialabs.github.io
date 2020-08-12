@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      rel="shortcut icon"
+      href="https://static.wixstatic.com/media/7f7364_a749b2e0745243f585d1d60fa51f9d94%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/7f7364_a749b2e0745243f585d1d60fa51f9d94%7Emv2.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://static.wixstatic.com/media/7f7364_a749b2e0745243f585d1d60fa51f9d94%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/7f7364_a749b2e0745243f585d1d60fa51f9d94%7Emv2.png"
+      type="image/png"
+    />
+    <title>InnoLabs - Internalboard</title>
+    
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+    <style>
+        .td {   
+            border-color :  #454d55 !important;
+            font-size: 0.8em;
+        }
+        
+        
+    </style>
+  </head>
+  
+  <body>
+    <!-- Image and text -->
+<nav class="navbar navbar-sm shadow navbar-light bg-light text-left">
+    <a class="navbar-brand text-white " href="#"
+        ><strong class="text-primary">Inno</strong><strong class="text-warning">Labs</strong>
+      </a>
+</nav>
+    <br /><br />
+    <div class="container-fluid">
+      <table class="table table-sm table-bordered" >
+        <tr >
+          <th class="td" colspan="12">Swot Analysis</th>
+        </tr>
+       
+        <tr id="Row2">
+          <td class="td" colspan="6" style=" height: 220px;">
+            <div class="row">
+                <div class="col-6 text-left">
+                  <strong>Strenght</strong>
+                </div>
+                <div class="col-6 text-right">
+                  <a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#exampleModalCenter">+</a>
+                </div>
+              </div>
+             <!--Here the loop-->
+          </td>
+          <td class="td" colspan="6" style=" height: 220px;">
+            <div class="row">
+                <div class="col-6 text-left">
+                    <a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#exampleModalCenter">+</a>
+                  </div>
+                <div class="col-6 text-right">
+                  <strong>Weakness</strong>
+                </div>
+              </div>
+             <!--Here the loop-->
+          </td>
+        </tr>
+        <tr id="row3">
+           
+        </tr>
+        <tr id="row3">
+            <td class="td"  colspan="6"  style=" height: 220px;">
+                <div class="row">
+                    <div class="col-6 text-left">
+                      <strong>Opportunities</strong>
+                    </div>
+                    <div class="col-6 text-right">
+                      <a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#exampleModalCenter">+</a>
+                    </div>
+                  </div>
+                 <!--Here the loop-->
+              </td>
+
+          <td class="td"  colspan="6" style=" height: 220px;">
+            <div class="row">
+                <div class="col-6 text-left">
+                    <a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#exampleModalCenter">+</a>
+                  </div>
+                <div class="col-6 text-right">
+                  <strong>Weakness</strong>
+                </div>
+              </div>
+             <!--Here the loop-->
+          </td>
+         
+        </tr>
+        
+        
+      </table>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">adding note</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group mb-sm-3">
+              <input type="text" class="form-control shadow " placeholder="Name">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control shadow " id="exampleFormControlTextarea1" placeholder="Description" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Modal -->
+     <div class="modal fade" id="examplInfoNote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Info note</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="nama">Name:</label>
+              <input type="text" class="form-control shadow mb-sm-3" value="Note name">
+            </div>
+            <div class="form-group">
+              <label for="desc">Description:</label>
+              <textarea class="form-control shadow mb-sm-3" id="exampleFormControlTextarea1" placeholder="Description" rows="4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis esse animi ex veniam ab dolorum dolores pariatur? Exercitationem aliquam consequatur eos quas ratione aut. Quod tempore fuga possimus voluptate error!</textarea>
+            </div>
+            <div class="form-group">
+              <label for="by">By:</label>
+              <input type="text" class="form-control shadow mb-sm-3" value="John paidi">
+            </div>
+            <div class="form-group">
+              <label for="time">Time:</label>
+              <input type="text" class="form-control shadow mb-sm-3" value="2020-08-03 09:32:35">
+            </div>
+               
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+  </body>
+</html>
